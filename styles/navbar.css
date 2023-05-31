@@ -73,3 +73,12 @@ li.brand p {
     display: block;
   }
 }
+
+@media screen and (max-width: 600px) {
+  #menu-container.topNav.responsive li.menu-item {
+    display: block;
+  }
+  #menu-container.topNav.responsive li.bars-icon {
+    display: none;
+  }
+}
