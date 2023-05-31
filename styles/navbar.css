@@ -1,9 +1,5 @@
-/* * {
-  border: 1px solid gray;
-} */
-
 nav {
-  background: black;
+  background: rgb(37, 37, 37);
   padding: 0 15px;
   font-family: "Quicksand";
 }
@@ -68,6 +64,44 @@ a {
   text-align: center;
 }
 
+.active .item {
+  display: block;
+}
+
 .button.secondary {
   border-bottom: 1px solid white;
+}
+
+/* .submenu {
+  display: none;
+} */
+
+.submenu-active .submenu {
+  display: block;
+}
+
+.has-submenu li {
+  font-size: 20px;
+}
+
+.has-submenu > a::after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 900;
+  content: "\f078";
+  color: white;
+  padding-left: 5px;
+}
+
+.subitem a {
+  padding: 10px 15px;
+}
+
+.submenu-active {
+  background-color: black;
+}
+
+* {
+  border: 1px solid gray;
 }
