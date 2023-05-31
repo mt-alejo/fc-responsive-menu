@@ -1,0 +1,35 @@
+#navbar-container {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  font-family: "Quicksand", sans-serif;
+  border-bottom: 1px solid black;
+}
+
+#navbar-brand {
+  width: 20vw;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+}
+
+#brand-logo {
+  height: 80%;
+}
+
+#menu-container {
+  display: flex;
+}
+
+#menu-container li {
+  padding: 1rem;
+  list-style: none;
+}
+
+#menu-container li a {
+  text-decoration: none;
+  color: var(--green);
+}
