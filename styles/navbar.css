@@ -71,14 +71,20 @@ li.brand p {
 
   #menu-container.topNav li.bars-icon {
     display: block;
+    float: right;
   }
 }
 
 @media screen and (max-width: 600px) {
+  .topNav.responsive {
+    position: relative;
+  }
   #menu-container.topNav.responsive li.menu-item {
     display: block;
   }
   #menu-container.topNav.responsive li.bars-icon {
-    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
