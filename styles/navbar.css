@@ -1,84 +1,73 @@
-#navbar-container {
-  font-family: "Quicksand", sans-serif;
-  border-bottom: 1px solid black;
-}
+/* * {
+  border: 1px solid gray;
+} */
 
-/*MENU*/
-
-#menu-container {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style: none;
-  transition: all 0.5s;
-}
-
-#menu-container li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex: 1;
+nav {
   background: black;
+  padding: 0 15px;
+  font-family: "Quicksand";
 }
 
-#menu-container li.brand {
-  display: flex;
-  gap: 5px;
-  align-items: center;
-  font-family: "Quicksand", sans-serif;
-  font-size: 30px;
-  padding: 0 1em;
-  background: white;
-  transition: all 0.5s;
-}
-
-li.brand img {
-  height: 40px;
-}
-
-li.brand p {
-  margin: 0;
-}
-
-#menu-container li.bars-icon {
-  display: none;
-}
-
-#menu-container.topNav .bars-icon {
-  max-width: 50px;
-  font-size: 30px;
-  padding: 5px;
-  background: rgb(255, 255, 255);
-  border-radius: 3px;
-  box-shadow: 0px 0px 3px 1px gray;
-  cursor: pointer;
-}
-
-#menu-container li a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 15px;
+a {
   color: white;
-  text-transform: uppercase;
-  transition: all 0.2s;
+  text-decoration: none;
 }
 
-@media screen and (max-width: 600px) {
-  #menu-container.topNav li.menu-item {
-    display: none;
-  }
-
-  #menu-container.topNav li.bars-icon {
-    display: block;
-  }
+.menu,
+.submenu {
+  list-style-type: none;
 }
 
-@media screen and (max-width: 600px) {
-  #menu-container.topNav.responsive li.menu-item {
-    display: block;
-  }
-  #menu-container.topNav.responsive li.bars-icon {
-    display: none;
-  }
+.brand {
+  font-size: 20px;
+  padding: 7.5px 10px 7.5px 0;
+}
+
+.item {
+  padding: 10px;
+}
+
+.item.button {
+  padding: 9px 5px;
+}
+
+.item:not(.button) a:hover,
+.item a:hover::after {
+  color: gray;
+}
+
+/*Mobile styles*/
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu li a {
+  display: block;
+  padding: 15px 5px;
+}
+
+.menu li.subitem a {
+  padding: 15px;
+}
+
+.toggle {
+  order: 1;
+}
+
+.item.button {
+  order: 2;
+}
+
+.item {
+  order: 3;
+  width: 100%;
+  text-align: center;
+}
+
+.button.secondary {
+  border-bottom: 1px solid white;
 }
