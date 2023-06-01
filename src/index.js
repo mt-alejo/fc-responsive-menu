@@ -2,11 +2,11 @@ const menu = document.querySelector(".menu");
 const toggle = document.querySelector(".toggle");
 
 function toggleMenu() {
-  if (menu.classList.contains("responsive")) {
-    menu.classList.remove("responsive");
+  if (menu.classList.contains("active")) {
+    menu.classList.remove("active");
     toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
   } else {
-    menu.classList.add("responsive");
+    menu.classList.add("active");
     toggle.querySelector("a").innerHTML = "<i>X</i>";
   }
 }
