@@ -72,9 +72,9 @@ a {
   border-bottom: 1px solid white;
 }
 
-/* .submenu {
+.submenu {
   display: none;
-} */
+}
 
 .submenu-active .submenu {
   display: block;
@@ -101,7 +101,7 @@ a {
 .submenu-active {
   background-color: black;
 }
-
+/* 
 * {
   border: 1px solid gray;
-}
+} */
