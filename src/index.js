@@ -27,7 +27,7 @@ function toggleItem() {
   console.log(this.classList);
 }
 
-//LMAO CODE
+//LMAO CODE:
 for (let item of items) {
   //If you have a child with this ".className":
   if (item.querySelector(".submenu")) {
